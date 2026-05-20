@@ -46,7 +46,7 @@ export function MembershipsPage() {
         />
       </DataPanel>
 
-      {loading ? <DataPanel title="Roster"><p>Loading memberships from Alpha...</p></DataPanel> : null}
+      {loading ? <DataPanel title="Roster"><p>Loading memberships from the API...</p></DataPanel> : null}
       {error ? <DataPanel title="Roster"><p className="error-text">{error}</p></DataPanel> : null}
 
       {!loading && !error ? (

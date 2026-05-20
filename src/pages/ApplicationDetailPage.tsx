@@ -71,7 +71,7 @@ export function ApplicationDetailPage() {
   }
 
   if (loading) {
-    return <DataPanel title="Application detail"><p>Loading application from Alpha...</p></DataPanel>;
+    return <DataPanel title="Application detail"><p>Loading application from the API...</p></DataPanel>;
   }
 
   if (error || !application) {

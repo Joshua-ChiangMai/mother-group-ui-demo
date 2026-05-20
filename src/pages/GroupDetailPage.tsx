@@ -60,7 +60,7 @@ export function GroupDetailPage() {
   }
 
   if (loading) {
-    return <DataPanel title="Group detail"><p>Loading group detail from Alpha...</p></DataPanel>;
+    return <DataPanel title="Group detail"><p>Loading group detail from the API...</p></DataPanel>;
   }
 
   if (error || !group) {

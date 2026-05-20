@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { ReactNode } from 'react';
+import { apiConfig } from '../lib/config';
 
 interface AppShellProps {
   children: ReactNode;
@@ -38,11 +39,11 @@ export function AppShell({ children }: AppShellProps) {
         </nav>
 
         <div className="sidebar__meta">
-          <a href="http://localhost:3001/docs" target="_blank" rel="noreferrer">
-            Alpha Swagger
+          <a href={apiConfig.docsUrl} target="_blank" rel="noreferrer">
+            API Swagger
           </a>
-          <a href="http://localhost:3001/" target="_blank" rel="noreferrer">
-            Alpha Dashboard
+          <a href={apiConfig.dashboardUrl} target="_blank" rel="noreferrer">
+            API Dashboard
           </a>
         </div>
       </aside>

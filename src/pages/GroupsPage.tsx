@@ -65,7 +65,7 @@ export function GroupsPage() {
         </div>
       </DataPanel>
 
-      {loading ? <DataPanel title="Groups"><p>Loading groups from Alpha...</p></DataPanel> : null}
+      {loading ? <DataPanel title="Groups"><p>Loading groups from the API...</p></DataPanel> : null}
       {error ? <DataPanel title="Groups"><p className="error-text">{error}</p></DataPanel> : null}
 
       {!loading && !error ? (

@@ -59,7 +59,7 @@ export function ApplicationsPage() {
         </div>
       </DataPanel>
 
-      {loading ? <DataPanel title="Applications"><p>Loading applications from Alpha...</p></DataPanel> : null}
+      {loading ? <DataPanel title="Applications"><p>Loading applications from the API...</p></DataPanel> : null}
       {error ? <DataPanel title="Applications"><p className="error-text">{error}</p></DataPanel> : null}
 
       {!loading && !error ? (

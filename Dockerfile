@@ -12,9 +12,8 @@ RUN npm ci
 # Copy application source and build
 COPY . .
 
-# Vite bakes VITE_* variables at build time. Coolify: set this under Build Args /
-# Environment (build-time). Default keeps the same relative /api path as local dev.
-ARG VITE_API_BASE_URL=/api
+# Vite bakes VITE_* variables at build time. Override in Coolify build args if needed.
+ARG VITE_API_BASE_URL=https://abqd2pkatkuks607gntnz1rb.lanna.engineer
 ENV VITE_API_BASE_URL=${VITE_API_BASE_URL}
 
 RUN npm run build
